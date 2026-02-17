@@ -1,9 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import { StoreData, Product, StoreSettings } from './types';
 import { INITIAL_DATA } from './constants';
-import StoreFront from './components/StoreFront';
-import ControlPanel from './components/ControlPanel';
+// تم تعديل المسارات هنا لإزالة /components/ لأن الملفات موجودة في المجلد الرئيسي
+import StoreFront from './StoreFront';
+import ControlPanel from './ControlPanel';
 
 const App: React.FC = () => {
   const [data, setData] = useState<StoreData>(() => {
